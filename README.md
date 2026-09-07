@@ -17,7 +17,9 @@ On a fresh clone, install Python, then run `python -m venv .venv` and
 
 - `events.json`: source data; keep some dates in the future.
 - `build_site.py`: loads events, selects today/future events, sorts, renders HTML.
-- `test_build_site.py`: four deterministic tests with fixed dates.
+- `site_template.html`: accessible page structure and club branding.
+- `styles.css`: responsive layout, event cards, and visual styling.
+- `test_build_site.py`: deterministic selection, rendering, empty-state, and escaping tests.
 - `.github/workflows/pipeline.yml`: test → build → deploy.
 - `dist/index.html`: generated output, excluded from Git.
 

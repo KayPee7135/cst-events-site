@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find upcoming workshops, competitions, and meetups with the ACM Club at CST.">
+  <meta name="theme-color" content="#101c18">
+  <title>ACM Club at CST — Upcoming events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#events">Skip to events</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="ACM Club at CST home">
+        <span class="brand-mark" aria-hidden="true">acm<span>✳</span></span>
+        <span class="brand-name">ACM Club<span>College of Science and Technology</span></span>
+      </a>
+      <a class="nav-link" href="#events">The calendar <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CURIOUS MINDS. SHARED SPACES.</p>
+          <h1 id="hero-title">Beyond the<br><span>classroom.</span></h1>
+          <p class="hero-description">Workshops, competitions, and club meetups.<br>Find your next reason to get together.</p>
+          <a class="browse-link" href="#events">Explore the calendar <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-aside" aria-label="$event_count $count_label">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <span class="aside-label" aria-hidden="true">ON THE HORIZON</span>
+          <span class="hero-count" aria-hidden="true">$event_count<span>↗</span></span>
+          <span class="count-label" aria-hidden="true">$count_label</span>
+          <span class="aside-footer" aria-hidden="true">A COMMUNITY IN MOTION <span>✳</span></span>
+        </div>
+      </section>
+
+      <section id="events" class="events-section" aria-labelledby="events-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow section-eyebrow">MAKE ROOM FOR SOMETHING GOOD</p><h2 id="events-heading">Upcoming events<span class="count-badge">$event_count</span></h2></div>
+          <span class="sort-note">Earliest first <span aria-hidden="true">↓</span></span>
+        </div>
+        $event_content
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>ACM Club at CST</strong><span>Learn together. Build together.</span></p>
+      <a href="#hero-title">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </div>
+</body>
+</html>
