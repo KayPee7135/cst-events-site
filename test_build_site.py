@@ -26,3 +26,20 @@ def test_render_mentions_every_event_given_to_it():
     html = render(EVENTS)
     for event in EVENTS:
         assert event["title"] in html
+
+
+def test_render_shows_empty_state_without_events():
+    html = render([])
+    assert "No upcoming events right now" in html
+    assert '<ul class="events-grid">' not in html
+
+
+def test_render_escapes_event_text():
+    html = render([{
+        "title": '<script>alert("event")</script>',
+        "date": "2027-03-01",
+        "venue": "Lab <4> & Studio",
+    }])
+    assert "<script>" not in html
+    assert "&lt;script&gt;" in html
+    assert "Lab &lt;4&gt; &amp; Studio" in html
