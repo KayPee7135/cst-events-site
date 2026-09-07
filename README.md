@@ -30,8 +30,8 @@ the later instruction to push directly to main conflicts with that protection.
 
 ## GitHub setup and exercises
 
-This workspace contains the final workflow. It does not by itself demonstrate
-the tutorial's intermediate failed and successful GitHub runs.
+This workspace contains the final workflow. See [LAB_RESULTS.md](LAB_RESULTS.md)
+for the actual GitHub runs demonstrating failures, repairs, and deployment gating.
 
 1. Commit and push the initial files to `main`.
 2. In Settings → Pages, choose **GitHub Actions** as the build source.
